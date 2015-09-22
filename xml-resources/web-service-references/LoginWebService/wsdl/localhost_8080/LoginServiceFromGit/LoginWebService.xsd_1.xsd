@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://Service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Service/">
+
+<xs:element name="ChangePassword" type="tns:ChangePassword"/>
+
+<xs:element name="ChangePasswordResponse" type="tns:ChangePasswordResponse"/>
+
+<xs:element name="CheckEmailExist" type="tns:CheckEmailExist"/>
+
+<xs:element name="CheckEmailExistResponse" type="tns:CheckEmailExistResponse"/>
+
+<xs:element name="Login" type="tns:Login"/>
+
+<xs:element name="LoginResponse" type="tns:LoginResponse"/>
+
+<xs:element name="PasswordGen" type="tns:PasswordGen"/>
+
+<xs:element name="PasswordGenResponse" type="tns:PasswordGenResponse"/>
+
+<xs:element name="Registrate" type="tns:Registrate"/>
+
+<xs:element name="RegistrateResponse" type="tns:RegistrateResponse"/>
+
+<xs:element name="SendPassword" type="tns:SendPassword"/>
+
+<xs:element name="SendPasswordResponse" type="tns:SendPasswordResponse"/>
+
+<xs:element name="ValEmail" type="tns:ValEmail"/>
+
+<xs:element name="ValEmailResponse" type="tns:ValEmailResponse"/>
+
+<xs:element name="ValPassword" type="tns:ValPassword"/>
+
+<xs:element name="ValPasswordResponse" type="tns:ValPasswordResponse"/>
+
+<xs:element name="ValUsername" type="tns:ValUsername"/>
+
+<xs:element name="ValUsernameResponse" type="tns:ValUsernameResponse"/>
+
+<xs:element name="WelcomeMail" type="tns:WelcomeMail"/>
+
+<xs:element name="WelcomeMailResponse" type="tns:WelcomeMailResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:complexType name="ValPassword">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValPasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Registrate">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegistrateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SendPassword">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SendPasswordResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="PasswordGen">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="PasswordGenResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ChangePassword">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ChangePasswordResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Login">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="WelcomeMail">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="WelcomeMailResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="CheckEmailExist">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="CheckEmailExistResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValEmail">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValEmailResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValUsername">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValUsernameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
